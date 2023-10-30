@@ -107,6 +107,8 @@ class ProjectConverter3To4 {
 	void rename_common(const char *array[][2], LocalVector<RegEx *> &cached_regexes, Vector<SourceLine> &source_lines);
 	Vector<String> check_for_rename_common(const char *array[][2], LocalVector<RegEx *> &cached_regexes, Vector<String> &lines);
 
+	void split_transform_tracks(Vector<SourceLine> &source_lines);
+
 	Vector<String> check_for_files();
 
 	Vector<String> parse_arguments(const String &line);
